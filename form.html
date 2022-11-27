@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+<body>
+    <form action="">
+        <h1>Signup</h1>
+        <h2>Personal Information</h2>
+        <p>First Name: <input type="text" name="first name" required></p>
+        <p>Last Name: <input type="text" name="last name" required></p>
+        <fieldset>
+            <legend>Gender:</legend>
+        <p>
+           Male <input type="radio" name="gender" id="" required> 
+           Female <input type="radio" name="gender" id="" required>
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="80" rows="7"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <p>Passcode: <input type="number" name="passcode" id="passcode"required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type:
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select card type--</option>
+                <option value="visa">Visa</option>
+                <option value="credit">Credit</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>Card Number: <input type="number" name="card_number" id="card_number" required></p>
+        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date" required></p>
+        <p>CVV: <input type="password" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
